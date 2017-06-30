@@ -10,9 +10,13 @@ A simple，responsive web design for profile landing pages.
 
 ## Screenshots
 
-![](http://ojuxjurwa.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-06-30%2020.50.40.png)
+![](https://raw.githubusercontent.com/mayuko2012/landing-page/master/screenshots/1.png)
 
-![](http://ojuxjurwa.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-06-30%2020.56.50.png)
+![](https://raw.githubusercontent.com/mayuko2012/landing-page/master/screenshots/2.png)
+
+![](https://raw.githubusercontent.com/mayuko2012/landing-page/master/screenshots/3.png)
+
+![](https://raw.githubusercontent.com/mayuko2012/landing-page/master/screenshots/4.png)
 
 ## Features
 
