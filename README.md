@@ -4,9 +4,9 @@
 
 A simple，responsive web design for profile landing pages.
 
-### Demo
+## Demo
 
-[Demo](https://mayuko.cn/)
+[This is Demo](https://mayuko.cn/)
 
 ## Screenshots
 
@@ -21,7 +21,6 @@ A simple，responsive web design for profile landing pages.
 - Handsome
 - Responsive web design
 
-  
 
 ## What framework used
 
@@ -30,8 +29,7 @@ A simple，responsive web design for profile landing pages.
 - jquery.js
 - type.css 
 
-  
 
 ## Licence
 
- MIT
+ © MIT 
