@@ -28,7 +28,7 @@
     float: left
 }
 .home_content {
-    padding-top: 20rem;
+    padding-top: 15rem;
     padding-bottom: 15rem;
 }
 
@@ -71,7 +71,17 @@
     color: #337AB7;
     text-decoration: none;
 }
-
+.navbar {
+    margin-bottom: 0px;
+    background: #f2f2f5;
+}
+.navbar:hover {
+    cursor: pointer;
+}
+.navbar-brand {
+    font-size: 12px;
+    color: #000;
+}
 a:focus, a:hover {
     color: #337AB7;
     text-decoration: none;

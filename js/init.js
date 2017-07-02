@@ -10,15 +10,28 @@ $(document).ready(function () {
     $('#typeit').typeIt({
         whatToType: "感谢来到这里",
         typeSpeed: 100,
-        delayStart:3000,
-        showCursor:false
+        delayStart: 3000,
+        showCursor: false
     });
     $("#uptop").click(function () {
         $('body,html').animate({scrollTop: 0}, 400);
-    })
+    });
     $("#tointroduce").click(function () {
         $('body,html').animate({scrollTop: $('#introduce').offset().top}, 800);
-    })
+    });
+    $("#s2t-btn").click(function () {
+        if ($('#t2s').val() == "s") {
+            $('html').s2t();
+            $('#s2t').html('<li class="icon-exchange"></li>&nbsp;&nbsp;切换为简体');
+            $('#t2s').attr('value', 't');
+        }
+        else if ($('#t2s').val() == 't') {
+            $('html').t2s();
+            $('#s2t').html('<li class="icon-exchange"></li>&nbsp;&nbsp;切換為繁體');
+            $('#t2s').attr('value', 's');
+        }
+
+    });
 
 })
 $(function () {
