@@ -13,6 +13,9 @@ $(document).ready(function () {
         delayStart: 3000,
         showCursor: false
     });
+    $("#postGugu").click(function () {
+        PostData();
+    });
     $("#uptop").click(function () {
         $('body,html').animate({scrollTop: 0}, 400);
     });
@@ -33,7 +36,51 @@ $(document).ready(function () {
 
     });
 
-})
+});
+function PostData() {
+    if ($('#postName').val() != '') {
+        if ($('#postEmail').val() != '') {
+            var reg = /\w+[@]{1}\w+[.]\w+/;
+            if (reg.test($('#postEmail').val())) {
+                if ($('#postContent').val() != '') {
+                    $.ajax({
+                        url: 'memobird.php',
+                        type: 'GET',
+                        async: true,
+                        data: {
+                            n: $('#postName').val(),
+                            e: $('#postEmail').val(),
+                            c: $('#postContent').val()
+                        },
+                        dataType: 'json',
+                        success: function (data) {
+                            console.log(data);
+                            if (data.code == 1) {
+                                $('#postStatus').html('<li class="icon-ok"></li>&nbsp;咕咕机已成功接收。');
+                            } else {
+                                $('#postStatus').html('<li class="icon-exclamation"></li>&nbsp;哎呀，连接失败。');
+                            }
+                        },
+                        error: function () {
+                            $('#postStatus').html('<li class="icon-exclamation"></li>&nbsp;哎呀，网络连接失败。');
+                        }
+                    })
+                } else {
+                    $('#postStatus').html('<li class="icon-exclamation"></li>&nbsp;内容还没写。');
+                }
+            }else {
+                $('#postStatus').html('<li class="icon-exclamation"></li>&nbsp;Email出错了。');
+            }
+        } else {
+            $('#postStatus').html('<li class="icon-exclamation"></li>&nbsp;Email还没写。');
+        }
+    } else {
+        $('#postStatus').html('<li class="icon-exclamation"></li>&nbsp;昵称还没写。');
+
+    }
+
+
+}
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })

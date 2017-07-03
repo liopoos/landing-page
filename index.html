@@ -30,7 +30,11 @@
     <div class="container-fluid">
         <div class="nav navbar-right">
             <input type="text" value="s" style="display:none;" id="t2s">
-            <a class="navbar-brand" id="s2t-btn"><div id="s2t"><li class="icon-exchange"></li>&nbsp;切換為繁體</div></a>
+            <a class="navbar-brand" id="s2t-btn">
+                <div id="s2t">
+                    <li class="icon-exchange"></li>&nbsp;切換為繁體
+                </div>
+            </a>
         </div>
     </div>
 </nav>
@@ -413,6 +417,57 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Post Section -->
+    <div class="section color-white">
+        <div class="div-h">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <h3>联系</h3>
+                        <p>如果你想和我交流，可以将你的想法发送到我的咕咕机中。</p>
+                        <p>
+                        <li class="icon-ok"></li>&nbsp;已连接至咕咕机。</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+                        <form action="" target="nm_iframe">
+                        <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>昵称</label>
+                                        <input type="text" class="form-control" id="postName" placeholder="怎么称呼你？" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>联系方式</label>
+                                        <input type="email" class="form-control" id="postEmail" placeholder="Email是多少？" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>内容</label>
+                                <textarea type="password" class="form-control" id="postContent" rows="3" placeholder="聆听你的想法" required></textarea>
+                            </div>
+                            <p class="help-block" style="font-size: 14px;">你的内容将发送到我的咕咕机中。</p>
+                            <p style="font-size: 12px;"><a href="https://www.zhihu.com/question/39529878"
+                                                           target="_blank">什么是咕咕机？</a></p>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <button type="submit" class="btn btn-default" id="postGugu">发射</button>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8">
+                                    <p id="postStatus"></p>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Contact Section -->

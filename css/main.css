@@ -71,6 +71,16 @@
     color: #337AB7;
     text-decoration: none;
 }
+#postStatus{
+    font-size: 14px;
+    padding-top: 9px;
+}
+.form-control:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
 .navbar {
     margin-bottom: 0px;
     background: #f2f2f5;
