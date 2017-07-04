@@ -50,7 +50,8 @@ function PostData() {
                         data: {
                             n: $('#postName').val(),
                             e: $('#postEmail').val(),
-                            c: $('#postContent').val()
+                            c: $('#postContent').val(),
+                            u: $('#postUrl').val()
                         },
                         dataType: 'json',
                         success: function (data) {
